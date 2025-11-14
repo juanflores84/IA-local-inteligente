@@ -8,74 +8,149 @@
     body {
       font-family: 'Segoe UI', Roboto, sans-serif;
       margin: 0;
-      min-height: 100vh;
-      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1650&q=80') no-repeat center center fixed;
-      background-size: cover;
+      background: linear-gradient(135deg, #0a0d14, #141824, #1e2433);
       color: #f1f1f1;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      min-height: 100vh;
       padding: 20px;
-      backdrop-filter: brightness(0.6);
     }
+
+    header {
+      padding: 40px 20px;
+    }
+
     h1 {
       color: #00d1ff;
-      font-size: 2.4em;
+      font-size: 2.7em;
       margin-bottom: 10px;
-      text-shadow: 0 0 10px #000;
+      text-shadow: 0 0 12px #000;
     }
+
     h2 {
-      color: #ccc;
+      color: #bbbbbb;
       font-weight: normal;
       margin-top: 0;
-      font-size: 1.1em;
-      text-shadow: 0 0 5px #000;
+      font-size: 1.2em;
+      text-shadow: 0 0 8px #000;
     }
+
     p {
       font-size: 1.15em;
-      max-width: 600px;
-      margin-top: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 15px;
       line-height: 1.6;
       text-shadow: 0 0 6px #000;
     }
+
+    /* CONTENEDOR TARJETAS */
+    .services {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      background: rgba(255,255,255,0.12);
+    }
+
+    .card h3 {
+      color: #00d1ff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1em;
+      color: #e6e6e6;
+      margin-top: 10px;
+    }
+
+    /* BOTÓN WHATSAPP */
     .whatsapp {
       background: #25d366;
       color: white;
-      padding: 14px 28px;
-      border-radius: 10px;
+      padding: 16px 32px;
+      border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 30px;
+      margin-top: 40px;
       display: inline-block;
-      transition: background 0.3s;
-      box-shadow: 0 0 10px #000;
+      transition: background 0.3s, transform 0.2s;
+      font-size: 1.1em;
+      box-shadow: 0 0 12px #000;
     }
+
     .whatsapp:hover {
       background: #1ebe5d;
+      transform: scale(1.05);
     }
+
     footer {
-      margin-top: 50px;
+      margin-top: 60px;
       font-size: 0.85em;
-      color: #bbb;
+      color: #aaa;
       text-shadow: 0 0 5px #000;
+      padding-bottom: 20px;
     }
   </style>
 </head>
-<body>
-  <h1>Flores IA</h1>
-  <h2>Asistentes Virtuales Inteligentes para Personas y Negocios</h2>
-  
-  <p>Te ayudamos a integrar la inteligencia artificial en tu día a día.  
-  Automatiza tareas, mejora tu productividad y ofrece una atención al cliente más rápida y eficiente.</p>
-<p>🤖 Creación de asistentes para tiendas y redes sociales.</p>
-<p>💬 Automatización de atención al cliente con IA.</p>
-<p>📈 Optimización de tareas y gestión de contenido.</p>
-  <a class="whatsapp" href="https://wa.me/34656422926" target="_blank">💬 Contáctanos por WhatsApp</a>
 
-  <footer>
-    © 2025 Flores IA · Asistentes Virtuales Inteligentes  
-  </footer>
+<body>
+
+<header>
+  <h1>Flores IA</h1>
+  <h2>Asistentes Virtuales Inteligentes · Automatización · IA para Negocios</h2>
+
+  <p>
+    Ayudo a personas y negocios a integrar la inteligencia artificial en su día a día.  
+    Automatiza tareas, mejora tu productividad y ofrece atención al cliente automática 24/7.
+  </p>
+</header>
+
+<!-- TARJETAS -->
+<section class="services">
+  <div class="card">
+    <h3>🤖 Asistentes Personalizados</h3>
+    <p>Creación de asistentes inteligentes adaptados a tu negocio, redes sociales o uso personal.</p>
+  </div>
+
+  <div class="card">
+    <h3>💬 Atención al Cliente 24/7</h3>
+    <p>Configuro sistemas que responden mensajes automáticamente y resuelven dudas al instante.</p>
+  </div>
+
+  <div class="card">
+    <h3>📈 Automatización de Tareas</h3>
+    <p>Optimizo tus tareas repetitivas para que tu tiempo rinda el doble y ganes más sin esfuerzo.</p>
+  </div>
+
+  <div class="card">
+    <h3>🌐 Mini Webs Inteligentes</h3>
+    <p>Creo páginas como esta para negocios que necesitan presencia online rápida y profesional.</p>
+  </div>
+</section>
+
+<!-- BOTÓN WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/34656422926" target="_blank">
+  💬 Contactar por WhatsApp
+</a>
+
+<footer>
+  © 2025 Flores IA · Asistentes Virtuales Inteligentes  
+</footer>
+
 </body>
 </html>
